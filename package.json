@@ -1,0 +1,29 @@
+{
+  "name": "react-events-typescript",
+  "version": "1.0.0",
+  "scripts": {
+    "compile": "tsc",
+    "build-dev": "TS_NODE_PROJECT=\"config/tsconfig-for-webpack-config.json\" webpack --mode development",
+    "build": "TS_NODE_PROJECT=\"config/tsconfig-for-webpack-config.json\" webpack --mode production",
+    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "test": ""
+  },
+  "dependencies": {
+    "@types/react": "^16.0.40",
+    "@types/react-dom": "^16.0.4",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "typescript": "^2.7.2",
+    "webpack": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^9.4.7",
+    "@types/webpack": "^4.1.0",
+    "awesome-typescript-loader": "^5.0.0-0",
+    "ts-node": "^5.0.1",
+    "tsconfig-paths": "^3.1.1",
+    "tslint": "^5.9.1",
+    "tslint-react": "^3.5.1",
+    "webpack-cli": "^2.0.11"
+  }
+}
