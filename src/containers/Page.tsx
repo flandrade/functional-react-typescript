@@ -6,13 +6,13 @@ import Input from "../components/Input";
 import withProps from "../utils/withProps";
 
 import { increment, reset } from "../helpers/update";
-import { State } from "../types";
+import { Resseter, State } from "../types";
 
 type IncrementHandler
   = React.MouseEvent<HTMLButtonElement>
   | React.MouseEvent<HTMLInputElement>;
 
-export class Page extends React.Component<{}, State> {
+export default class Page extends React.Component<{}, State> {
   state: State = {
     resetText: "",
     score: 0
@@ -23,12 +23,13 @@ export class Page extends React.Component<{}, State> {
   }
 
   onResetHandler = (_e: React.KeyboardEvent<HTMLInputElement>) => {
-    this.setState(reset(this.state, { value: 40000 }));
+    const resetter: Resseter = { value: 0 };
+    this.setState(reset(this.state, { value: 0 }));
   }
 
   render(): JSX.Element {
-    const { score }: State = this.state;
-    const Display: React.ComponentType = withProps({ score })(CounterDisplay);
+    const state = this.state;
+    const Display: React.ComponentType = withProps(state)(CounterDisplay);
     return (
     <div>
       <Display/>

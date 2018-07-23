@@ -15,12 +15,11 @@ with TypeScript.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+**Table of Contents**
 
 - [Secure Functional React - Type Driven Development with TypeScript](#secure-functional-react---type-driven-development-with-typescript)
   - [Patterns](#patterns)
     - [High-Order Components (HOC)](#high-order-components-hoc)
-      - [withProps](#withprops)
     - [Functional State](#functional-state)
     - [Events](#events)
   - [Stack](#stack)
@@ -158,7 +157,8 @@ This project uses the following stack:
 - TypeScript 2.9
 - Webpack 4.0
 - tslint
-
+- Jest
+- Enzyme
 
 ## Getting Started
 
@@ -171,5 +171,17 @@ npm install
 2. Compile the project
 
 ```
-npm run compile
+npm run build
+```
+
+3. Open the file
+
+```
+public/index.html
+```
+
+4. To run tests
+
+```
+npm test
 ```

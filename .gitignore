@@ -28,6 +28,7 @@ npm-debug.log
 # TypeScript files
 .tscache
 **/*.js
+!jest.config.js
 
 # Production
 /build
