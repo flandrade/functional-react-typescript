@@ -1,25 +1,33 @@
 {
-  "name": "react-events-typescript",
+  "name": "functional-react-typescript",
+  "license": "MIT",
   "version": "1.0.0",
   "scripts": {
     "compile": "tsc",
     "build-dev": "TS_NODE_PROJECT=\"config/tsconfig-for-webpack-config.json\" webpack --mode development",
     "build": "TS_NODE_PROJECT=\"config/tsconfig-for-webpack-config.json\" webpack --mode production",
     "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
-    "test": ""
+    "test": "jest"
   },
   "dependencies": {
-    "react": "16.4.6",
-    "react-dom": "16.0.6",
+    "react": "16.4.1",
+    "react-dom": "16.4.1",
     "typescript": "2.9.2",
     "webpack": "4.16.1"
   },
   "devDependencies": {
+    "@types/enzyme": "^3.1.12",
+    "@types/jest": "^23.3.0",
     "@types/node": "^9.6.23",
-    "@types/webpack": "^4.4.7",
     "@types/react": "^16.0.40",
     "@types/react-dom": "^16.0.4",
+    "@types/webpack": "^4.4.7",
     "awesome-typescript-loader": "5.2.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
+    "jest": "^23.4.1",
+    "ts-jest": "^23.0.1",
     "ts-node": "5.0.1",
     "tsconfig-paths": "^3.1.1",
     "tslint": "^5.11.0",

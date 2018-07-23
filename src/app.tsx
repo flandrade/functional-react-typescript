@@ -1,9 +1,9 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
+import Page from "./containers/Page";
+
 ReactDOM.render(
-  <div>
-    <h1>Hello world!</h1>
-  </div>,
+  <Page/>,
   document.getElementById("root")
 );
