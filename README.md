@@ -4,6 +4,8 @@
 
 # Secure Functional React - Type Driven Development with TypeScript
 
+[![Build Status](https://travis-ci.org/flandrade/functional-react-typescript.svg?branch=master)](https://travis-ci.org/flandrade/functional-react-typescript)
+
 > A strong type system can not only prevent errors, but also guide you and
 provide feedback in your design process.
 
