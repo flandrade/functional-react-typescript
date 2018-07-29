@@ -176,7 +176,7 @@ npm install
 npm run build
 ```
 
-3. Open the file
+3. Start the application
 
 ```
 public/index.html
