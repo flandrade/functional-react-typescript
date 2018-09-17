@@ -187,3 +187,6 @@ public/index.html
 ```
 npm test
 ```
+
+## License
+MIT
